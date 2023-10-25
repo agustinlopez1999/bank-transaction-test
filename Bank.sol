@@ -2,14 +2,13 @@
 pragma solidity >=0.4.0;
 
 contract bankAccount{
-    //test push
     address owner;
+    mapping (address => uint) balance;
 
     constructor(){
         owner = msg.sender;
+        balance[msg.sender] = 0;
     }
-
-    mapping (address => uint) balance;
 
     function getBalance() public view returns(uint){
         return balance[msg.sender];
@@ -24,11 +23,10 @@ contract bankAccount{
         balance[msg.sender] -= _amount;
     }
 
-    function transfer(uint _amount, address _destination) public{
+    function transfer(uint _amount, address _destination) payable public{
         require(_destination != msg.sender, "You cannot transfer to yourself!");
         require(balance[msg.sender] >= _amount, "Insufficient Balance");
         balance[msg.sender] -= _amount;
         balance[_destination] += _amount;
     }
-
 }

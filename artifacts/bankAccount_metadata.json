@@ -51,7 +51,7 @@
 				],
 				"name": "transfer",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -96,11 +96,11 @@
 	},
 	"sources": {
 		"Bank.sol": {
-			"keccak256": "0x1b6c8aac0dc5f2d96bac6ecf35cd08fde510e894eb18fc7d9eb17b1589c1f2d2",
+			"keccak256": "0x4c5f1e515404fdb7f8513094b65f340d4d2946d44a41a1601f271982b3b34bde",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f73cb35476332c531a371d4b5992b96b4e545b0a845cd677ef2d7c7d699f4c0a",
-				"dweb:/ipfs/QmVMaa6crsTxiYjqmjGWi79FREU85Cs7Epo7xCHcd9U8mQ"
+				"bzz-raw://19db7915fd50f05066d7c76fd64003144cac05531882a26a281a885804ba4da3",
+				"dweb:/ipfs/QmSjdSCnH9o9xAvzbxcgbCXALFBmhcrXiM7aF8jCYcLptd"
 			]
 		}
 	},
